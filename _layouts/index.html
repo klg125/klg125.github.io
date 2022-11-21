@@ -19,16 +19,21 @@
 </head>
 
 <body>
-  <div class="hero">
-    <nav>
-    <ul>
-      <li> <a href='#Bio'> Bio </a></li>
-      <li> <a href='#Professional'> Professional Experience </a></li>
-      <li> <a href='#Campus'> On Campus </a></li>
-      <li> <a href='#Projects'> Projects </a></li>
-      <li> <a href='#Life'> Life </a></li>
-    
-</div>
+
+    <div class="wrapper">
+    <div class="sidebar">
+        
+        <h2>Sidebar</h2>
+        <ul>
+            <li>  <a href='#Bio'> Bio </a></li>
+            <li> <a href='#Professional'> Professional Experience </a></li>
+            <li> <a href='#Campus'> On Campus </a></li>
+            <li> <a href='#Projects'> Projects </a></li>
+            <li> <a href='#Life'> Life </a></li>
+        </ul>  
+    </div>
+    </div>
+
   <div class="full">
     <div class="front" id="landingScreen">
       <div class="bouncable-border-rotatable" style="margin-bottom: 30px;">
@@ -71,12 +76,12 @@
   <!-- All triggers will get offset successively in the js, in the code where "sceneOffset += screenHeight*3" -->
   <div id="trigger"></div>
 
-  <section class="Professional" id="Professional">
+  <section class="Professional">
     <div class="section">
       <!-- <div class="plane">
         <img id="plane0" src="/img/plane.png">
       </div> -->
-      <h1 class="staggerAnimate">Here is a summary of my professional experiences:</h1>
+      <h1 class="staggerAnimate"  id="Professional">Here is a summary of my professional experiences:</h1>
       <div class="row-items">
 
         <div class="staggerAnimate">
@@ -120,12 +125,12 @@
 
   <section class="spacer"></section>
 
-  <section class="Bio" id="Bio">
+  <section class="sd" >
     <div class="section">
       <!-- <div class="plane">
         <img id="plane0" src="/img/plane.png">
       </div> -->
-      <h1 class="staggerAnimate">Here is a little bit about my background</h1>
+      <h1 class="staggerAnimate" id="Bio">Here is a little bit about my background</h1>
       <div class="row-items">
 
         <div class="staggerAnimate">
@@ -191,12 +196,12 @@
 
   <section class="spacer"></section>
 
-  <section class="Campus" id="Campus">
+  <section class="Campus">
     <div class="section">
       <!-- <div class="plane">
         <img id="plane1" src="/img/plane.png">
       </div> -->
-      <h1 class="staggerAnimate">I am also actively involved on campus! These are the research groups and organizations that I devote the most time to</h1>
+      <h1 class="staggerAnimate"  id="Campus">I am also actively involved on campus! These are the research groups and organizations that I devote the most time to</h1>
       <div class="row-items">
 
         <div class="staggerAnimate">
@@ -231,113 +236,66 @@
 
   <section class="spacer"></section>
 
-  <section class="Projects" id="Projects">
+  <section class="Projects">
     <div class="section">
-      <h1 class="staggerAnimate">Here are a few of my favorite side projects:</h1>
+      <h1 class="staggerAnimate"  id="Projects">Here are a few of my favorite side projects:</h1>
       <div class="row-items">
-        <!-- <div class="staggerAnimate">
-          <div class="large-image">
-            <img src="/img/bruinbot.png" class="icon-fill" />
-          </div>
-          <p class="item-name"><a target="_blank" href="https://ucladevx.com/">DevX</a></p>
-          <p class="item-desc">Project Manager @ <a target="_blank" href="https://github.com/ucladevx/BruinBot-Backend">BruinBot</a></p>
-          <p class="item-desc">Autonomous robot campus delivery service</p>
-        </div> -->
-
-        <!-- <div class="staggerAnimate">
-          <div class="large-image">
-            <img src="/img/bruinbot.png" class="icon-fill" />
-          </div>
-          <p class="item-name"><a target="_blank" href="http://sift-us.com/">Sift</a></p>
-          <p class="item-desc">B2B for extremely quick, collaborative, and chess elo-based resume screening. Used by UCLA's biggest student organizations.</p>
-        </div>
-
-        <div>
-          <div class="staggerAnimate">
-            <p class="item-name"><a target="_blank" href="https://github.com/ucladevx/BruinBot-Backend">BruinBot</a></p>
-            <p class="item-desc">Mobile app for ordering and planning autonomous robot deliveries</p>
-          </div>
-          <div class="staggerAnimate">
-            <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/MarioRL">marioRL</a></p>
-            <p class="item-desc">Double deep Q-Learning and other reinforcement learning tricks help Mario not die</p>
-          </div>
-          <div class="staggerAnimate">
-            <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/RNN-moneymaker">moneymaker</a></p>
-            <p class="item-desc">CNN's, RNN's, and stocks. Name a better combo</p>
-          </div>
-          <div class="staggerAnimate">
-            <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/poolfolio">poolfolio</a></p>
-            <p class="item-desc">Crowd-managed stock market simulation competition</p>
-          </div>
-          <div class="staggerAnimate">
-            <p class="item-name"><a target="_blank" href="https://github.com/ucladevx/Mappening">bmaps</a></p>
-            <p class="item-desc">Helps UCLA students discover interesting events near them on map, live at <a target="_blank" href="http://bmaps.io/">Bmaps.io</a></p>
-          </div> -->
-
-          <div class="staggerAnimate">
-            <div class="large-image">
-              <a target="_blank" href="http://sift-us.com/"><img src="../img/sift.png" class="icon-fill" /></a>
-            </div>
-            <p class="item-name"><a target="_blank" href="http://sift-us.com/">Sift</a></p>
-            <p class="item-desc" style="width: 400px"><b>B2B</b> for quick, collaborative, and elo-based resume screening. Used by UCLA's biggest student organizations.</p>
-            <button data-modal-target="#modal">Open Modal</button>
-            <div class="modal" id="modal">
-              <div class="modal-header">
-                <div class="title">Example Modal</div>
-                <button data-close-button class="close-button">&times;</button>
-              </div>
-              <div class="modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
-              </div>
-            </div>
-            <div id="overlay"></div>
-          </div>
-
-          <div class="staggerAnimate">
-            <div class="large-image">
-              <a target="_blank" href="http://sift-us.com/"><img src="../img/sift.png" class="icon-fill" /></a>
-            </div>
-            <p class="item-name"><a target="_blank" href="http://sift-us.com/">Sift</a></p>
-            <p class="item-desc" style="width: 400px"><b>B2B</b> for quick, collaborative, and elo-based resume screening. Used by UCLA's biggest student organizations.</p>
-            <button data-modal-target="#modal">Open Modal</button>
-            <div class="modal" id="modal">
-              <div class="modal-header">
-                <div class="title">Example Modal</div>
-                <button data-close-button class="close-button">&times;</button>
-              </div>
-              <div class="modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
-              </div>
-            </div>
-            <div id="overlay"></div>
-          </div>
   
+
+          <div class="staggerAnimate">
+            <div class = "box">
+              <div class="card" style="height: 400px">
+                <div class="large-image">
+                  <a target="_blank" href="https://www.nature.com/articles/s41467-021-23989-x"><img src="../img/staged.png" class="icon-fill" /></a>
+                </div>
+                <p class="item-name"><a target="_blank" href="https://www.nature.com/articles/s41467-021-23989-x">COVID-19 Staged Alert</a></p>
+                <p class="item-desc" style="width: 400px"> Design of COVID-19 staged alert systems to ensure healthcare capacity with minimal closures </p>
+                <button id="popup"  data-modal-target="#modal">   Click here to learn more    </button>
+                <div class="modal" id="modal">
+                  <div class="modal-header">
+                    <div class="title">Example Modal</div>
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </div>
+            </div>
+          </div>
+
+            <div class="staggerAnimate">
+              <div class = "box">
+                <div class="card" style="height: 400px">
+                  <div class="large-image">
+                    <a target="_blank"><img src="../img/golfcv.png" class="icon-fill" /></a>
+                  </div>
+                  <p class="item-name"><a target="_blank">GolfCV</a></p>
+
+                  <p class="item-desc" style="width: 400px"> -Captured 590 swing videos from 28 golfers <br>
+                    -Extracted approximately 90 frames from each three-second side-view swing video <br>
+                    -Translated a 3D video into a 2D matrix <br> Extracted the position of 17 body parts for each frame with MoveNet Lightning. <br>
+                     -Used elastic net regression to predict
+                      face angle and path. <br>  -Achieved a MAE of 0.82, 
+                     0.90 degrees on the two metrics, respectively. </p>
+                 
+                </div>
+              </div>
+            </div>
   
           <div>
             <div class="staggerAnimate">
-              <p class="item-name"><a target="_blank" href="https://github.com/ucladevx/BruinBot-Backend">BruinBot</a></p>
-              <p class="item-desc">Mobile app for ordering and planning autonomous robot deliveries</p>
+              <p class="item-name"><a target="_blank" >Opioid Pred</a></p>
+              <p class="item-desc">  examine whether keywords from Google Trends <br> can predict opioid-related emergency department (ED) visits</p>
             </div>
 
             <div class="staggerAnimate">
-              <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/MarioRL">marioRL</a></p>
-              <p class="item-desc">Double deep Q-Learning and other reinforcement learning tricks help Mario not die</p>
+              <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/MarioRL">Sentiment Analysis</a></p>
+              <p class="item-desc">Built sentiment-based portfolio by normalizing likability of <br> ticker symbol and by regressing this portfolio on the <br> Fama-French three-factor model</p>
             </div>
 
-            <div class="staggerAnimate">
-              <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/RNN-moneymaker">moneymaker</a></p>
-              <p class="item-desc">CNN's, RNN's, and stocks. Name a better combo</p>
-            </div>
-  
-            <div class="staggerAnimate">
-              <p class="item-name"><a target="_blank" href="https://github.com/dvorjackz/poolfolio">poolfolio</a></p>
-              <p class="item-desc">Crowd-managed stock market simulation competition</p>
-            </div>
-  
-            <div class="staggerAnimate">
-              <p class="item-name"><a target="_blank" href="https://github.com/ucladevx/Mappening">bmaps</a></p>
-              <p class="item-desc">Helps UCLA students discover interesting events near them on map, live at <a target="_blank" href="http://bmaps.io/">Bmaps.io</a></p>
-            </div>
+          
           </div>          
 
         <!-- </div> -->
@@ -347,9 +305,9 @@
 
   <section class="spacer"></section>
 
-  <section class="Life" id="Life">
+  <section class="Life">
     <div class="section">
-      <h1 class="staggerAnimate">And here's a little about myself and a few things I care about:</h1>
+      <h1 class="staggerAnimate" id="Life"> And here's a little about myself and a few things I care about:</h1>
       <div class="row-items">
         <div class="grid">
       
