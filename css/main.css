@@ -20,16 +20,16 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
   .box{
-    display: flex;
-    justify-content: center;
+
     align-items: center;
     min-height:  400px;
    
   }
 
   .card{
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
+    
     background-color: white;
     border-color: #A8A8A8;
     border-style: solid;
@@ -108,16 +108,19 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   .wrapper .sidebar{
     width: 150px;
+    max-width: 10%;
     height: 100%;
     background: #4b4276;
     padding: 30px 0px;
     position: fixed;
+    margin: 0 max(33%, 20px) 0 0;
+    z-index: 999;
   }
   
   .wrapper .sidebar h2{
     color: black;
     font-weight: bolder;
-    
+    z-index: 999;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -128,11 +131,12 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-bottom: 1px solid #bdb8d7;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(255,255,255,0.05);
+    z-index: 999;
   }    
   
   .wrapper .sidebar ul li a{
     color: white;
-    z-index: 999;
+    z-index: 1000;
     font: 20px;
    
   }
@@ -160,6 +164,17 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   #popup :hover{
     background-color: blue;
+  }
+
+  #scrolling{
+    font-size: 60px;
+    text-align: center;
+    display: block;
+  }
+
+  #scrolling-text{
+    
+    text-align: center;
   }
   /* ------------------------- Icons and Font ------------------------- */
   
@@ -276,11 +291,17 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: block;
   }
 
+  i {
+   
+    text-align: center;
+    display: block;
+  }
+
   section {
     justify-content:center;
     /* vh does not work in mobile, so height is set dynamicaly in js */
     height: 100vh;
-    padding: 0px 40px;
+    padding: 0px 0px;
   }
   
   ::selection {

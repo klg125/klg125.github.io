@@ -1,4 +1,4 @@
-const STAGGER_DURATION = 7;
+const STAGGER_DURATION = 2;
 const PIN_DURATION = 3;
 const TOTAL_DURATION = STAGGER_DURATION + PIN_DURATION;
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
@@ -152,9 +152,9 @@ $(function() {
     let sections = document.getElementsByClassName("section");
     let sectionTweens = [];
 
-    sectionTweens.push(TweenMax.staggerFromTo(sections[0].getElementsByClassName("staggerAnimate"), 1, {y: screenHeight*3/2}, {y: 0, ease: Back.easeOut.config(0.75)}, 0.5));
+    sectionTweens.push(TweenMax.staggerFromTo(sections[0].getElementsByClassName("staggerAnimate"), 1, {y: screenHeight*1/2}, {y: 0, ease: Back.easeOut.config(0.75)}, 0.5));
     for (let i = 1; i < sections.length - 1; i++) {
-        sectionTweens.push(TweenMax.staggerFromTo(sections[i].getElementsByClassName("staggerAnimate"), 1, {y: screenHeight*3/2}, {y: 0, ease: Back.easeOut.config(0.75)}, 0.5));
+        sectionTweens.push(TweenMax.staggerFromTo(sections[i].getElementsByClassName("staggerAnimate"), 1, {y: screenHeight*1/2}, {y: 0, ease: Back.easeOut.config(0.75)}, 0.5));
     }
     sectionTweens.push(TweenMax.fromTo(sections[sections.length - 1].getElementsByClassName("staggerAnimate"), 1, {autoAlpha: 0}, {autoAlpha: 1}));
 
