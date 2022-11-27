@@ -30,7 +30,7 @@ closeModalButtons.forEach(button => {
   })
 })
 
-function openModal(modal) {
+function openModal(modal) { //Open modal and close modal for the projet section popup 
   if (modal == null) return
   modal.classList.add('active')
   overlay.classList.add('active')
@@ -196,37 +196,4 @@ $(function() {
         sceneOffset += screenHeight;
     }
 
-    // -------------------------------------------- Plane bezier animation ------------------------------------------ //
-
-    // planeWidth = document.getElementById("plane0").clientWidth;
-
-    // let airplane0 = new TimelineMax()
-    //     .add(TweenMax.set($("#plane0"), {x: -planeWidth, y: sections[0].clientHeight/2}))
-    //     .add(TweenMax.to($("#plane0"), 2, {
-    //         css:{
-    //             bezier: {
-    //                 curviness: 1.25,
-    //                 autoRotate: true,
-    //                 values: [
-    //                         {x: screenWidth + planeWidth,	y: sections[0].clientHeight/2},
-    //                     ]
-    //             }
-    //         }, 
-    //         ease: Power1.easeInOut
-    //     }));
-    
-    // new ScrollMagic.Scene({triggerElement: "#trigger", duration: 2200, offset: screenHeight + sceneOffsets[0].stagger })
-    //     .setTween(airplane0)
-    //     .addIndicators({name: "airplane1"})
-    //     .addTo(controller);
-
-    // document.getElementById("plane1").style.transform = "scaleX(-1)";
-    // let airplane1 = new TimelineMax()
-    //     .add(TweenMax.fromTo($("#plane1"), 2, {x: screenWidth + planeWidth,	y: sections[1].clientHeight/2}, {x: -planeWidth, y: sections[1].clientHeight/2}));
-    
-    // new ScrollMagic.Scene({triggerElement: "#trigger", duration: 3300, offset: screenHeight + sceneOffsets[1].stagger })
-    //     .setTween(airplane1)
-    //     .addIndicators({name: "airplane2"})
-    //     .addTo(controller);
-    
   });

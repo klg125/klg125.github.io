@@ -18,14 +18,14 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       list-style: none;
   }
 
-
+/* To ensure the minimum height to contain the cards in 400px */
   .box{
 
     align-items: center;
     min-height:  400px;
    
   }
-
+/* styling for each card within the box */
   .card{
     height: 400px;
     width: 300px;
@@ -39,7 +39,7 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     overflow: hidden;
     text-align: center;
   }
-
+/* Styling of the popup for project section. */
   .modal {
     position: fixed;
     top: 50%;
@@ -100,7 +100,7 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     opacity: 1;
     pointer-events: all;
   }
-
+/* To style the sidebar  */
   .wrapper{
     display: flex;
     
@@ -148,7 +148,7 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .wrapper .sidebar ul li:hover a{
     color: #fff;
   }
-
+/* To style the popup button */
   #popup {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -165,7 +165,7 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   #popup :hover{
     background-color: blue;
   }
-
+/* Styling the scroll button and the text above it  */
   #scrolling{
     font-size: 60px;
     text-align: center;
@@ -187,7 +187,7 @@ html, spacer, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: normal;
     font-style: normal;
   }
-  
+  /* Ions in the landing page */
   .fi-social-facebook:before,
   .fi-mail:before,
   .fi-social-github:before,
